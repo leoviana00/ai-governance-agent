@@ -48,7 +48,7 @@ def generate_demo_dataset_service(events: int = 500):
         )
 
         # ----------------------------------
-        # 🎯 DISTRIBUIÇÃO CONTROLADA
+        # DISTRIBUIÇÃO CONTROLADA
         # ----------------------------------
 
         risk_bucket = random.choices(
@@ -107,7 +107,7 @@ def generate_demo_dataset_service(events: int = 500):
         }
 
         # ----------------------------------
-        # 🔥 PREDIÇÃO
+        # PREDIÇÃO
         # ----------------------------------
 
         prediction = predict_risk(event)
@@ -120,7 +120,7 @@ def generate_demo_dataset_service(events: int = 500):
             }
 
         # ----------------------------------
-        # 🔥 SALVAR
+        # SALVAR
         # ----------------------------------
 
         add_event(event, prediction)
