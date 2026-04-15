@@ -52,7 +52,7 @@ def build_features(dataset):
         is_feature_branch = 1 if branch_type == "feature" else 0
 
         # ----------------------------
-        # VETOR FINAL (11 FEATURES)
+        # 11 FEATURES
         # ----------------------------
         features = [
             files_changed,
