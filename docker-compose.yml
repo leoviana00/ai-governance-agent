@@ -1,0 +1,50 @@
+version: "3.9"
+
+services:
+
+  # ==========================================
+  # PostgreSQL
+  # ==========================================
+  # postgres:
+  #   image: postgres:15
+  #   container_name: aiops-postgres
+  #   restart: always
+  #   environment:
+  #     POSTGRES_DB: aiops
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+
+  # ==========================================
+  # AI Agent
+  # ==========================================
+  ai-agent:
+    build: .
+    container_name: aiops-agent
+    hostname: aiops
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../ai-governance-agent/storage:/app/storage
+
+  # ==========================================
+  # Grafana
+  # ==========================================
+#   grafana:
+#     image: grafana/grafana:latest
+#     container_name: aiops-grafana
+#     restart: always
+#     ports:
+#       - "3000:3000"
+#     environment:
+#       - GF_INSTALL_PLUGINS=marcusolsson-json-datasource
+#     volumes:
+#       - grafana_data:/var/lib/grafana
+
+# volumes:
+#   postgres_data:
+#   grafana_data:
