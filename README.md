@@ -1,9 +1,9 @@
-# 🚀 From CI/CD to Change Intelligence  
+# From CI/CD to Change Intelligence  
 ## Applying AI and DORA Metrics to Govern Deployments
 
 ---
 
-## 📌 Overview
+## Overview
 
 Este projeto implementa uma plataforma completa de **Change Intelligence**, combinando:
 
@@ -21,7 +21,7 @@ O objetivo é transformar deploys em **insights inteligentes**, permitindo:
 
 ---
 
-## 🧠 Problema
+## Problema
 
 Times de engenharia frequentemente:
 
@@ -32,7 +32,7 @@ Times de engenharia frequentemente:
 
 ---
 
-## 🎯 Solução
+## Solução
 
 Criar um pipeline que:
 
@@ -43,7 +43,7 @@ Captura → Analisa → Aprende → Visualiza → Governa
 
 ---
 
-## 🧱 Arquitetura
+## Arquitetura
 
 ```console
              ┌────────────────────┐
@@ -84,7 +84,7 @@ Captura → Analisa → Aprende → Visualiza → Governa
 
 ---
 
-## ⚙️ Stack Tecnológica
+## Stack Tecnológica
 
 | Camada            | Tecnologia           |
 |------------------|---------------------|
@@ -97,7 +97,7 @@ Captura → Analisa → Aprende → Visualiza → Governa
 
 ---
 
-## 🔁 Fluxo do Sistema
+## Fluxo do Sistema
 
 1. Developer faz commit  
 2. Jenkins executa pipeline  
@@ -112,7 +112,7 @@ Captura → Analisa → Aprende → Visualiza → Governa
 
 ---
 
-## 🤖 AI Agent
+## AI Agent
 
 Responsável por:
 
@@ -123,7 +123,7 @@ Responsável por:
 
 ---
 
-## 🧠 Machine Learning
+## Machine Learning
 
 ### Features utilizadas
 
@@ -145,7 +145,7 @@ Responsável por:
 
 ---
 
-## 📊 Métricas DORA
+## Métricas DORA
 
 ### ✔ Lead Time
 
@@ -165,7 +165,7 @@ Quantidade de deploys por período
 
 ---
 
-## 🛡️ Governança de Mudanças
+## Governança de Mudanças
 
 ### Métricas
 
@@ -184,7 +184,7 @@ Quantidade de deploys por período
 
 ---
 
-## 📈 Dashboards (Grafana)
+## Dashboards (Grafana)
 
 ### 🔹 Delivery Performance
 
@@ -219,7 +219,7 @@ Quantidade de deploys por período
 
 ---
 
-## 📡 Principais Endpoints
+## Principais Endpoints
 
 | Endpoint                  | Descrição                    |
 |--------------------------|------------------------------|
@@ -233,7 +233,7 @@ Quantidade de deploys por período
 
 ---
 
-## 🧪 Execução
+## Execução
 
 ### 🔹 Subir ambiente
 
@@ -246,16 +246,15 @@ docker compose up -d
 | Serviço  | URL                                            |
 | -------- | ---------------------------------------------- |
 | AI Agent | [http://localhost:8000](http://localhost:8000) |
-| Grafana  | [http://localhost:3000](http://localhost:3000) |
-| App Demo | [http://localhost:8086](http://localhost:8086) |
 
-## 📊 Exemplos de Insights
+
+## Exemplos de Insights
 - Deploys auto-aprovados geram mais incidentes
 - Commits fora do padrão aumentam risco
 - Mudanças de alto risco impactam falhas
 - Governança reduz instabilidade
 
-## 🧠 Conceitos Aplicados
+## Conceitos Aplicados
 - DORA Metrics
 - DevOps
 - AIOps
@@ -263,7 +262,7 @@ docker compose up -d
 - Engenharia de Confiabilidade (SRE)
 - Machine Learning aplicado a operações
 
-## 🚀 Diferenciais
+## Diferenciais
 - Integração completa CI/CD + AI + Observabilidade
 - Modelo preditivo de risco de deploy
 - Governança baseada em dados
