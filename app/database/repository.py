@@ -54,7 +54,7 @@ def init_db():
 
 
 # ==========================================
-# Reset do banco
+# Reset do banco [Cansei de ficar limpando na mão] 
 # ==========================================
 
 def reset_database():
@@ -85,7 +85,7 @@ def add_event(event, prediction=None):
     commit_sha = event.get("commit_sha")
     commit_timestamp = event.get("commit_timestamp")
 
-    # 🔥 fallback obrigatório
+    # fallback obrigatório
     risk_probability = None
     risk_level = "UNKNOWN"
     risk_source = None
@@ -175,7 +175,7 @@ def update_incident(commit_sha, incident, deploy_timestamp=None):
 
 
 # ==========================================
-# Dataset para ML (🔥 CORRIGIDO E ROBUSTO)
+# Dataset para ML 
 # ==========================================
 
 def load_dataset():
