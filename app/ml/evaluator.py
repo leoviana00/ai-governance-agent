@@ -67,8 +67,8 @@ def evaluate_model():
         "accuracy": round(accuracy, 4),
         "precision": round(precision, 4),
         "recall": round(recall, 4),
-        "f1_score": round(f1, 4),  # 🔥 NOVO (importante)
+        "f1_score": round(f1, 4),  
         "confusion_matrix": cm,
         "classification_report": report,
-        "total_samples": len(y)  # 🔥 útil no Grafana
+        "total_samples": len(y)  
     }
